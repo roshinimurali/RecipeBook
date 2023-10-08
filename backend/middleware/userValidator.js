@@ -13,7 +13,7 @@ export const validateFullUserRules = [
   body(["firstName", "lastName"])
     .trim()
     .isAlpha()
-    .custom((value) => upperCaseFirstLetter(value)),
+    .customSanitizer((value) => upperCaseFirstLetter(value)),
 
   /* Sanitizes the password */
   body("password")
