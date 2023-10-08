@@ -22,6 +22,8 @@ mongoose
     console.log("🤨");
   });
 
+//Register Routes
+
 //The Server is listening on port 3000
 app.listen(port, () => {
   console.log("The Server is listening on port: ", port);
